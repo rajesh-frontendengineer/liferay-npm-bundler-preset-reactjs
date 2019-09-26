@@ -12,7 +12,7 @@ Add the following to your .npmbundlerrc file:
 
 ```shell
 {
-    "preset": "liferay-npm-bundler-preset-react"
+    "preset": "liferay-npm-bundler-preset-reactjs"
 }
 ```
 
