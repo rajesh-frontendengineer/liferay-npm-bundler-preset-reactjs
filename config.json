@@ -1,13 +1,15 @@
 {
-    "exclude":{
-        "fbjs": ["flow/**/*"]
-    },
-    "*":{
-        "plugins": [
-            "replace-browser-modules"
-        ],
-        ".babelrc":{
-            "presets": ["liferay-standard"]
-        }
-    }
+	"/": {
+		"plugins": ["resolve-linked-dependencies"],
+		".babelrc": {
+			"presets": ["liferay-standard"]
+		}
+	},
+	"*": {
+		"copy-plugins": ["exclude-imports"],
+		"plugins": ["replace-browser-modules"],
+		".babelrc": {
+			"presets": ["liferay-standard"]
+		}
+	}
 }

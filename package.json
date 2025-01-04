@@ -1,12 +1,14 @@
 {
   "name": "liferay-npm-bundler-preset-reactjs",
-  "version": "1.0.8",
+  "version": "2.0.0",
   "description": "liferay npm bundler preset react",
   "main": "config.json",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "files": ["node_modules"],
+  "files": [
+    "node_modules"
+  ],
   "keywords": [
     "liferay",
     "npm-bundler",
@@ -16,14 +18,18 @@
   ],
   "bundledDependencies": [
     "babel-preset-liferay-standard",
-    "liferay-npm-bundler-plugin-replace-browser-modules"
+    "liferay-npm-bundler-plugin-replace-browser-modules",
+    "liferay-npm-bundler-plugin-resolve-linked-dependencies",
+    "liferay-npm-bundler-plugin-exclude-imports"
   ],
   "author": "veldandi rajesh",
   "license": "MIT",
-  "publish":"https://registry.npmjs.org",
-  "private":false,
+  "publish": "https://registry.npmjs.org",
+  "private": false,
   "dependencies": {
-    "babel-preset-liferay-standard": "^2.13.2",
-    "liferay-npm-bundler-plugin-replace-browser-modules": "^2.13.2"
+    "babel-preset-liferay-standard": "2.32.0",
+    "liferay-npm-bundler-plugin-replace-browser-modules": "2.32.0",
+    "liferay-npm-bundler-plugin-resolve-linked-dependencies": "2.32.0",
+    "liferay-npm-bundler-plugin-exclude-imports": "2.32.0"
   }
 }
