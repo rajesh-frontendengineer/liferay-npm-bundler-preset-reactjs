@@ -3,13 +3,21 @@
 		"plugins": ["resolve-linked-dependencies"],
 		".babelrc": {
 			"presets": ["liferay-standard"]
-		}
+		},
+		"post-plugins": [
+			"inject-imports-dependencies",
+			"tweak-sourcemaps"
+		]
 	},
 	"*": {
 		"copy-plugins": ["exclude-imports"],
 		"plugins": ["replace-browser-modules"],
 		".babelrc": {
 			"presets": ["liferay-standard"]
-		}
+		},
+		"post-plugins": [
+			"inject-imports-dependencies",
+			"inject-peer-dependencies"
+		]
 	}
 }

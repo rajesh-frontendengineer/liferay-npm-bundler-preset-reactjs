@@ -1,6 +1,6 @@
 {
   "name": "liferay-npm-bundler-preset-reactjs",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "liferay npm bundler preset react",
   "main": "config.json",
   "scripts": {
@@ -18,9 +18,12 @@
   ],
   "bundledDependencies": [
     "babel-preset-liferay-standard",
+    "liferay-npm-bundler-plugin-exclude-imports",
+    "liferay-npm-bundler-plugin-inject-imports-dependencies",
+    "liferay-npm-bundler-plugin-inject-peer-dependencies",
     "liferay-npm-bundler-plugin-replace-browser-modules",
     "liferay-npm-bundler-plugin-resolve-linked-dependencies",
-    "liferay-npm-bundler-plugin-exclude-imports"
+    "liferay-npm-bundler-plugin-tweak-sourcemaps"
   ],
   "author": "veldandi rajesh",
   "license": "MIT",
@@ -28,8 +31,11 @@
   "private": false,
   "dependencies": {
     "babel-preset-liferay-standard": "2.32.0",
+    "liferay-npm-bundler-plugin-exclude-imports": "2.32.0",
+    "liferay-npm-bundler-plugin-inject-imports-dependencies": "2.32.0",
+    "liferay-npm-bundler-plugin-inject-peer-dependencies": "2.32.0",
     "liferay-npm-bundler-plugin-replace-browser-modules": "2.32.0",
     "liferay-npm-bundler-plugin-resolve-linked-dependencies": "2.32.0",
-    "liferay-npm-bundler-plugin-exclude-imports": "2.32.0"
+    "liferay-npm-bundler-plugin-tweak-sourcemaps": "2.32.0"
   }
 }
